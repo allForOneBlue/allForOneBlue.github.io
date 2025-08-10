@@ -1,71 +1,15 @@
 <!DOCTYPE html>
 <html>
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-
-  /* Navigation bar container */
-  nav {
-    background-color: #333;
-    overflow: hidden;
-  }
-
-  /* Links inside the nav */
-  nav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  nav a:hover {
-    background-color: #575757;
-    color: white;
-  }
-
-  /* Mobile menu icon */
-  .icon {
-    display: none;
-    float: right;
-    padding: 14px 16px;
-    cursor: pointer;
-    color: white;
-    font-size: 18px;
-  }
-
-  /* Responsive styles */
-  @media screen and (max-width: 600px) {
-    nav a { display: none; }
-    nav a.icon {
-      display: block;
-    }
-  }
-
-  @media screen and (max-width: 600px) {
-    nav.responsive { position: relative; }
-    nav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    nav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
-</style>
+	<head>
+	  <link rel="stylesheet" href="styles.css">
+	  </head>
 <body>
 
 <h1>Welcome To My Digital Sanctum</h1>
 <nav id="myNav">
   <a href="#home">Home</a>
   <a href="blog.html">Blog</a>
-  <a href="#About">About</a>
+  <a href="about.html">About</a>
   <a href="#contact">Contact</a>
   <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">☰</a>
 </nav>
@@ -83,10 +27,6 @@ function toggleMenu() {
 
 This is a place for new friends to visit and engage with my ideas, 
 visions, projects, etc. 
-
-
-Can changes be updated now? 
-
 
 
 

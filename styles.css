@@ -1,0 +1,80 @@
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:black;
+    color:white;
+  }
+
+  .ct {
+  /* Flexbox handles horizontal + vertical centering for any content */
+  width: 60vw;              /* 60% of viewport width */
+  margin: 0 auto;           /* center block horizontally in window */
+  font-size:35px;
+  display: flex;
+  justify-content: center;  /* horizontal center */
+  align-items: center;      /* vertical center */
+
+  /* Ensure text also aligns nicely when flex isn't involved */
+  text-align: center;
+
+  /* Optional: Set height for vertical centering if you want a fixed box */
+  /* height: 200px; */
+
+  /* Optional: If you ever switch to single-line mode, uncomment:
+  line-height: 200px; */
+}
+
+
+  /* Navigation bar container */
+  nav {
+    background-color: #333;
+    overflow: hidden;
+  }
+
+  /* Links inside the nav */
+  nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    background-color: #575757;
+    color: white;
+  }
+
+  /* Mobile menu icon */
+  .icon {
+    display: none;
+    float: right;
+    padding: 14px 16px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+  }
+
+  /* Responsive styles */
+  @media screen and (max-width: 600px) {
+    nav a { display: none; }
+    nav a.icon {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    nav.responsive { position: relative; }
+    nav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    nav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
